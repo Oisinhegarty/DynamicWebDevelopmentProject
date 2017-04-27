@@ -1,0 +1,390 @@
+<DOCTYPE html>
+<!--Home -->
+<!-- Author: Oisin Hegarty -->
+<html>
+	<head>
+		<link href="css/home.css"rel="stylesheet">
+		<script type="text/javascript" src="js/javascript.js"></script>
+		<meta charset = "utf-8">
+		<img id="header" src ="images/Header.jpg" alt="Header" width="100%" height="200px">
+		<title>Home</title>
+	</head>	
+	<body>
+	<div id="quizStadiums">	
+	<div id="quizstart">
+	
+	<!-- FORM -->
+		<form id="form">
+		<h2 style="color:#B0CFE0">Please Fill Out This Form Before Starting The Quiz</h2>
+			<ul>
+			<li>
+				<input type="text" class="field-style field-split align-left" required id="name" placeholder="NAME" />
+			</li>
+			<li>
+				<input type="tel" class="field-style field-split align-left" id="mobile" placeholder="PHONE NUMBER" required /><br>
+			</li>
+			<li>
+				<input type="text" class="field-style field-full align-none" id="email" placeholder="EMAIL" required /><br>
+			</li>
+			<li>
+				<input type="submit" value="Start" onclick="start(); return false;">
+			</li>
+			</ul>
+		</form>	
+	</div>
+	
+	<!-- QUESTIONS -->
+	
+	<!-- QUESTION 1 -->
+		<div id="question0" class="questionStyle" style="display:none">
+		<div class="container">
+			<h2>Arsenal's Stadium?</h2>
+			  <ul>
+				  <li>
+					<input type="radio" id="f-option0" name="ans0" value="Emirates Stadium">
+					<label for="f-option0">Emirates Stadium</label>
+					<div class="check"></div>
+				  </li>
+				  <li>
+					<input type="radio" id="s-option0" name="ans0" value="Highbury">
+					<label for="s-option0">Highbury</label>
+					<div class="check"><div class="inside"></div></div>
+				  </li>
+				  <li>
+					<input type="radio" id="t-option0" name="ans0" value="Etihad Stadium">
+					<label for="t-option0">Etihad Stadium</label>
+					<div class="check"><div class="inside"></div></div>
+				  </li>
+			</ul>
+			  <button onclick="toggle(0,1)">continue</button>
+		</div>
+		</div>
+		
+		<!-- QUESTION 2 -->
+		<div id="question1" class="questionStyle" style="display:none">
+		<div class="container">
+			<h2>Chelsea's Stadium?</h2>
+			  <ul>
+				  <li>
+					<input type="radio" id="f-option1" name="ans1" value="O Dromo">
+					<label for="f-option1">O Dromo</label>
+					<div class="check"></div>
+				  </li>
+				  <li>
+					<input type="radio" id="s-option1" name="ans1" value="Stamford Bridge">
+					<label for="s-option1">Stamford Bridge</label>
+					<div class="check"><div class="inside"></div></div>
+				  </li>
+				  <li>
+					<input type="radio" id="t-option1" name="ans1" value="London Ground">
+					<label for="t-option1">London Ground</label>
+					<div class="check"><div class="inside"></div></div>
+				  </li>
+			</ul>
+			  <button onclick="toggle(1,2)">continue</button>
+			  
+		</div>
+		</div>
+			
+		<!-- QUESTION 3 -->
+		<div id="question2" class="questionStyle" style="display:none">
+		<div class="container">
+			<h2>Manchester United's Stadium?</h2>
+			  <ul>
+				  <li>
+					<input type="radio" id="f-option2" name="ans2" value="City Park">
+					<label for="f-option2">City Park</label>
+					<div class="check"></div>
+				  </li>
+				  <li>
+					<input type="radio" id="s-option2" name="ans2" value="Manchester Stadium">
+					<label for="s-option2">Manchester Stadium</label>
+					<div class="check"><div class="inside"></div></div>
+				  </li>
+				  <li>
+					<input type="radio" id="t-option2" name="ans2" value="Old Trafford">
+					<label for="t-option2">Old Trafford</label>
+					<div class="check"><div class="inside"></div></div>
+				  </li>
+			</ul>
+			  <button onclick="toggle(2,3)">continue</button>
+		</div>
+		</div>
+		
+		<!-- QUESTION 4 -->
+		<div id="question3" class="questionStyle" style="display:none">
+		<div class="container">
+			<h2>Sunderland's Stadium?</h2>
+			  <ul>
+				  <li>
+					<input type="radio" id="f-option3" name="ans3" value="The Stadium of Light">
+					<label for="f-option3">The Stadium of Light</label>
+					<div class="check"></div>
+				  </li>
+				  <li>
+					<input type="radio" id="s-option3" name="ans3" value="Geordie Stadium">
+					<label for="s-option3">Geordie Stadium</label>
+					<div class="check"><div class="inside"></div></div>
+				  </li>
+				  <li>
+					<input type="radio" id="t-option3" name="ans3" value="Sunderland Ground">
+					<label for="t-option3">Sunderland Ground</label>
+					<div class="check"><div class="inside"></div></div>
+				  </li>
+			</ul>
+			  <button onclick="toggle(3,4)">continue</button>
+		</div>
+		</div>
+		
+		<!-- QUESTION 5 -->
+		<div id="question4" class="questionStyle" style="display:none">
+		<div class="container">
+			<h2>Burnley's Stadium?</h2>
+			  <ul>
+				  <li>
+					<input type="radio" id="f-option4" name="ans4" value="Turf Stadium">
+					<label for="f-option4">Turf Stadium</label>
+					<div class="check"></div>
+				  </li>
+				  <li>
+					<input type="radio" id="s-option4" name="ans4" value="Turf Moor">
+					<label for="s-option4">Turf Moor</label>
+					<div class="check"><div class="inside"></div></div>
+				  </li>
+				  <li>
+					<input type="radio" id="t-option4" name="ans4" value="Moor Ground">
+					<label for="t-option4">Moor Ground</label>
+					<div class="check"><div class="inside"></div></div>
+				  </li>
+			</ul>
+			  <button onclick="toggle(4,5)">continue</button>
+		</div>
+		</div>
+		
+	<!-- QUESTION 6 -->
+		<div id="question5" class="questionStyle" style="display:none">
+		<div class="container">
+			<h2>Bournemouth's Stadium?</h2>
+			  <ul>
+				  <li>
+					<input type="radio" id="f-option5" name="ans5" value="Dean Stadium">
+					<label for="f-option5">Dean Stadium</label>
+					<div class="check"></div>
+				  </li>
+				  <li>
+					<input type="radio" id="s-option5" name="ans5" value="Dean Park">
+					<label for="s-option5">Dean Park</label>
+					<div class="check"><div class="inside"></div></div>
+				  </li>
+				  <li>
+					<input type="radio" id="t-option5" name="ans5" value="Dean Court">
+					<label for="t-option5">Dean Court</label>
+					<div class="check"><div class="inside"></div></div>
+				  </li>
+			</ul>
+			  <button onclick="toggle(5,6)">continue</button>
+		</div>
+		</div>
+		
+		<!-- QUESTION 7 -->
+		<div id="question6" class="questionStyle" style="display:none">
+		<div class="container">
+			<h2>Hull City's Stadium?</h2>
+			  <ul>
+				  <li>
+					<input type="radio" id="f-option6" name="ans6" value="KCOM Stadium">
+					<label for="f-option6">KCOM Stadium</label>
+					<div class="check"></div>
+				  </li>
+				  <li>
+					<input type="radio" id="s-option6" name="ans6" value="Hull Arena">
+					<label for="s-option6">Hull Arena</label>
+					<div class="check"><div class="inside"></div></div>
+				  </li>
+				  <li>
+					<input type="radio" id="t-option6" name="ans6" value="Tigers Ground">
+					<label for="t-option6">Tigers Ground</label>
+					<div class="check"><div class="inside"></div></div>
+				  </li>
+			</ul>
+			  <button onclick="toggle(6,7)">continue</button>
+			  
+		</div>
+		</div>
+		
+		<!-- QUESTION 8 -->
+		<div id="question7" class="questionStyle" style="display:none">
+		<div class="container">
+			<h2>Crystal Palace's Stadium?</h2>
+			  <ul>
+				  <li>
+					<input type="radio" id="f-option7" name="ans7" value="Palace Ground">
+					<label for="f-option7">Palace Ground</label>
+					<div class="check"></div>
+				  </li>
+				  <li>
+					<input type="radio" id="s-option7" name="ans7" value="Selhurst Park">
+					<label for="s-option7">Selhurst Park</label>
+					<div class="check"><div class="inside"></div></div>
+				  </li>
+				  <li>
+					<input type="radio" id="t-option7" name="ans7" value="Upton Park">
+					<label for="t-option7">Upton Park</label>
+					<div class="check"><div class="inside"></div></div>
+				  </li>
+			</ul>
+			  <button onclick="toggle(7,8)">continue</button>
+			  
+		</div>
+		</div>
+		
+		<!-- QUESTION 9 -->
+		<div id="question8" class="questionStyle" style="display:none">
+		<div class="container">
+			<h2>Southampton's Stadium?</h2>
+			  <ul>
+				  <li>
+					<input type="radio" id="f-option8" name="ans8" value="St Mark's Stadium">
+					<label for="f-option8">St Mark's Stadium</label>
+					<div class="check"></div>
+				  </li>
+				  <li>
+					<input type="radio" id="s-option8" name="ans8" value="St John's Stadium">
+					<label for="s-option8">St John's Stadium</label>
+					<div class="check"><div class="inside"></div></div>
+				  </li>
+				  <li>
+					<input type="radio" id="t-option8" name="ans8" value="St Mary's Stadium">
+					<label for="t-option8">St Mary's Stadium</label>
+					<div class="check"><div class="inside"></div></div>
+				  </li>
+			</ul>
+			  <button onclick="toggle(8,9)">continue</button>
+			  
+		</div>
+		</div>
+		
+		<!-- QUESTION 10 -->
+		<div id="question9" class="questionStyle" style="display:none">
+		<div class="container">
+			<h2>Swansea City's Stadium?</h2>
+			  <ul>
+				  <li>
+					<input type="radio" id="f-option9" name="ans9" value="Liberty Stadium">
+					<label for="f-option9">Liberty Stadium</label>
+					<div class="check"></div>
+				  </li>
+				  <li>
+					<input type="radio" id="s-option9" name="ans9" value="Allianz Stadium">
+					<label for="s-option9">Allianz Stadium</label>
+					<div class="check"><div class="inside"></div></div>
+				  </li>
+				  <li>
+					<input type="radio" id="t-option9" name="ans9" value="Aviva Stadium">
+					<label for="t-option9">Aviva Stadium</label>
+					<div class="check"><div class="inside"></div></div>
+				  </li>
+			</ul>
+			  <button onclick="toggle(9,10)">continue</button>
+			  
+		</div>
+		</div>
+		
+		<div id="question10" class="questionStyle"  style="display:none">
+		<span class="question">Chelsea Manager?</span><br><br>
+		<input id="q10" name="ans10" type="text" placeholder="Your Answer" ><br><br>
+		<button onclick="next(10,11)">continue</button>
+		</div>
+		
+		<div id="question11" class="questionStyle"  style="display:none">
+		<span class="question">Everton Manager?</span><br><br>
+		<input id="q11" type="text" name="ans11"placeholder="Your Answer" ><br><br>
+		<button onclick="next(11,12)">continue</button>
+		</div>
+		<div id="question12" class="questionStyle"  style="display:none">
+		<span class="question">Manchester United Manager?</span><br><br>
+		<input id="q12" type="text" name="ans12"placeholder="Your Answer" ><br><br>
+		<button onclick="next(12,13)">continue</button>
+		</div>
+
+		<div id="question13" class="questionStyle"  style="display:none">
+		<span class="question">West Ham Manager?</span><br><br>
+		<input id="q13" type="text" name="ans13"placeholder="Your Answer" ><br><br>
+		<button onclick="next(13,14)">continue</button>
+		</div>
+		
+		<div id="question14" class="questionStyle"  style="display:none">
+		<span class="question">Manchester City Manager?</span><br><br>
+		<input id="q14" type="text" name="ans14"placeholder="Your Answer" ><br><br>
+		<button onclick="next(14,15)">continue</button>
+		</div>
+		
+		<div id="question15" class="questionStyle"  style="display:none">
+		<span class="question">Liverpool Mangager?</span><br><br>
+		<input id="q15" type="text" name="ans15"placeholder="Your Answer" ><br><br>
+		<button onclick="next(15,16)">continue</button>
+		</div>
+
+		<div id="question16" class="questionStyle"  style="display:none">
+		<span class="question">West Brom Manager?</span><br><br>
+		<input id="q16" type="text" name="ans16"placeholder="Your Answer" ><br><br>
+		<button onclick="next(16,17)">continue</button>
+		</div>
+		
+		<div id="question17" class="questionStyle"  style="display:none">
+		<span class="question">Watford Managaer?</span><br><br>
+		<input id="q17" type="text" name="ans17"placeholder="Your Answer" ><br><br>
+		<button onclick="next(17,18)">continue</button>
+		</div>
+		
+		<div id="question18" class="questionStyle"  style="display:none">
+		<span class="question">Sunderland Manager?</span><br><br>
+		<input id="q18" type="text" name="ans18"placeholder="Your Answer" ><br><br>
+		<button onclick="next(18,19)">continue</button>
+		</div>
+
+		<div id="question19" class="questionStyle"  style="display:none">
+		<span class="question">Hull City Manager?</span><br><br>
+		<input id="q19" type="text" name="ans19"placeholder="Your Answer" ><br><br>
+		<button onclick="end(19)">Finish</button>
+		<button onclick="review()">Review Answers</button>
+		</div>
+
+		<div id="summary" style="display:none">
+		<div class="questionStyle" id="container">
+		<h3>YOU GOT <span id="result"></span> CORRECT ANSWERS! THIS EQUALS <span id="percent"></span>%</h3>
+		<h3>These are your answers versus the correct answers</h3>
+			
+			<div id="yourAnswers">
+				<p id="yourAns"><p>
+			</div>
+			<div id="rightAnswers">
+				<p id="rightAns"><p>
+			</div>
+			<br><br><br><br><br>
+		<button onclick="printCert1()">Print Certificate</button>
+			
+			
+		</div>
+		</div>
+		
+		<div id="printDiv" style="display:none">
+		<div class="questionStyle" id="container">
+		<h2>This is to certify that:</h2><br><br>
+		<h1><span id="printName"></span></h1><hr><br><br>
+		<h2>has completed the Premier League Quiz with a score of <span id="printPercent"></span>%</h2>
+
+			<br><br><br><br><br>
+		<h2>Signed: Oisin Hegarty</h2>
+			
+			
+		</div>
+		</div>
+
+		
+		</div>
+		
+</body>
+	
+</html>
+				
